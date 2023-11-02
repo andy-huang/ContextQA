@@ -11,6 +11,7 @@ context_router = APIRouter()
 
 app = FastAPI(title="ContextQA api", openapi_url="/openapi.json", docs_url="/docs", redoc_url="/redoc")
 origins = [
+    "*",
     "http://localhost:3000",
     "http://localhost:3001",
 ]
